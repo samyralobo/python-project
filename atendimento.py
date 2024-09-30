@@ -1,0 +1,38 @@
+print('-' * 100)
+print('\n| Hello outsider! Thank you for contacting us. Are you registered?       |')
+print('Press 1 for "YES"')
+print('Press 2 for "NO"')
+answer = int(input('Your answer: '))
+if answer==1 :
+     print ('Great! Now I need you to inform me your name: ')
+     nome = str(input(''))
+     print(f'Hi {nome}. Now I need you to inform me your social security number: ')
+     cpf = int(input(''))
+     print('Now, Let us see what are your intentions...')
+     print('-' * 100)
+     print('Please, select one of these numbers depending on your intentions: ')
+     print('\n[1] available courses \n[2] subscribe to one of our courses \n[3] cancel your subscription in one of our courses \n[4] speak to one of our attendants')
+     number = int(input('Your answer: '))
+     print('-' * 100)
+     if(number==1):
+         print('We have the following available courses:')
+         print('TECH, INFO, MAININFO, MAINTECH')
+     elif number==2:
+         print('I see that you want to subscribe to one of our courses(TECH, INFO, MAININFO, MAINTECH). ')
+         course = str(input('Please write wich one: '))
+         print(f'Great! You are officially subscribed to {course}')
+     elif number == 3:
+         print('I see that you want to unsubscribe to one of our courses...')
+         course2 = str(input('Please write the name of the course you want to cancel your subscription: '))
+         print(f'\nOkay! You have been officially left out of {course2}')
+     elif number == 4: 
+         print('I am connecting you to one of our attendants...')
+elif answer == 2:
+    print('So you arere not registered, let us change that!')
+    print('Just to warn you, I am going to ask a lot of questions about you. Be ready!')
+    completename = str(input('What is your whole name? '))
+    cpf2 = int(input('What is your social security number? '))
+    mom = str(input('What is the name of your mother? '))
+    dad = str(input('What is the name of your father? '))
+    phone = int(input('And last but not least, what is your phone number? '))
+    print('\nCongratulations! You have been officially registered! Welcome to our community!')
